@@ -14,17 +14,24 @@ u = (math.sqrt(2) / 1 + j)
 
 def move(z_initial):
     '''
-    funtion used to move the inspector by iterating through positions
+    Funtion used to move the inspector by iterating through positions
     Arguments:
     z_initial - float
     '''
+    z_total = z_initial
     for move in range(1, 64):
-        print(z_initial)
+        #print(z_initial)
         z_initial = (z_initial) / u
+        z_total += z_initial
+        #print(z_total)
         plt.plot(z_initial.real, z_initial.imag, 'ro')
+    return z_total/64
+# Need to calculate the average of positions to find key
 
+# Runs the move function and prints the mean of all positions
+print(move(z_initial))
 
-move(z_initial)
+# Grid formating
 x_label= 'Real'; y_label='Imaginary'
 plt.xlabel(x_label)
 plt.ylabel(y_label)
