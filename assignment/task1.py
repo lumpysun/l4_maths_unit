@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 j = cmath.sqrt(-1)
 
 # Define equation for the initial position of the inspector
-z_initial = (1+j) / ((math.sqrt(2) * j**4)) * (((1+j) / np.absolute(1+j))**1)
+z_initial = (1+j) / (((math.sqrt(2) * j**4)) * (((1+j) / np.absolute(1+j))**1))
 
 # Define variable u to use in iteration
 u = (math.sqrt(2) / 1 + j)
