@@ -19,7 +19,8 @@ def move(z_initial):
     z_initial - float
     '''
     z_total = z_initial
-    for move in range(1, 64):
+    for move in range(0, 64):
+        print(move)
         #print(z_initial)
         z_initial = (z_initial) / u
         z_total += z_initial
