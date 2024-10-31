@@ -12,12 +12,12 @@ z_initial = ((math.sqrt(2) * (1 + j))/ (((1 + j) / (math.sqrt(2)))**1))
 
 
 i = 0
-print(int(z_initial.real), z_initial.imag)
+#print(int(z_initial.real), z_initial.imag)
 while int(z_initial.real) != x or int(z_initial.imag) != y:
     i += 1
     z_initial = (z_initial) / u
     plt.plot(z_initial.real, z_initial.imag, 'ro')
-    print(i, z_initial.real, z_initial.imag)
+    #print(i, z_initial.real, z_initial.imag)
 
 x_label= 'Real'; y_label='Imaginary'
 plt.xlabel(x_label)
