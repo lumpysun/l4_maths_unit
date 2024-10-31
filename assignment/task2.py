@@ -26,7 +26,3 @@ plt.xlim(-2, 2)
 plt.ylim(2,-2)
 plt.grid()
 plt.show()
-
-
-
-
