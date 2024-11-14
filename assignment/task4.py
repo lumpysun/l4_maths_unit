@@ -10,8 +10,6 @@ a = 1
 x = np.linspace(-3,3,1000)
 y = np.sqrt((x*(x-1)**2)/(x-2)**2)
 
-
-
 plt.plot(x,y,'g:')
 
 x_label= 'x'; y_label='y'
