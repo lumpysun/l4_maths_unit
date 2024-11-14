@@ -8,7 +8,7 @@ e = np.exp(1)
 a = 1
 
 x = np.linspace(0,3,1000)
-y = (((x-3)*e**((1)/(x-3))/(x*e**(-a*x))))
+y = -(math.factorial(1)/x)
 
 plt.plot(x,y,'g:')
 
