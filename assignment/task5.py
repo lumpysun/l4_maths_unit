@@ -3,19 +3,17 @@ import math
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-j = cmath.sqrt(-1)
-e = np.exp(1)
 a = 1
 
-x = np.linspace(0,3,1000)
-y = -(math.factorial(1)/x)
+x = np.linspace(0,15,1000)
+y = -(math.factorial(a)/x)
 
 plt.plot(x,y,'g:')
 
 x_label= 'x'; y_label='y'
 plt.xlabel(x_label)
 plt.ylabel(y_label)
-plt.xlim(0, 3)
-plt.ylim(-2, 0.25)
+plt.xlim(0, 15)
+plt.ylim(-2, 2)
 plt.grid()
 plt.show()
